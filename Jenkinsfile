@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label any
-    }
+    agent any
 
     stages {
         stage('Checkout') {
@@ -9,7 +7,6 @@ pipeline {
                 checkout scm
             }
         }
-
 
         stage('Restore Dependencies') {
             steps {
