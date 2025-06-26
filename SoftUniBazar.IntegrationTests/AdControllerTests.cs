@@ -22,7 +22,7 @@ namespace SoftUniBazar.Tests
         [SetUp]
         public void Setup()
         {
-            // Set up in-memory database for testing1
+            // Set up in-memory database for testing
             var options = new DbContextOptionsBuilder<BazarDbContext>()
                 .UseInMemoryDatabase(databaseName: "BazarDbTest")
                 .Options;
