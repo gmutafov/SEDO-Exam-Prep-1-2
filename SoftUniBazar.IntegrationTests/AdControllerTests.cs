@@ -10,8 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-//test1
-//test2
+
 namespace SoftUniBazar.Tests
 {
     [TestFixture]
@@ -23,7 +22,7 @@ namespace SoftUniBazar.Tests
         [SetUp]
         public void Setup()
         {
-            // Set up in-memory database for testing234
+            // Set up in-memory database for testing
             var options = new DbContextOptionsBuilder<BazarDbContext>()
                 .UseInMemoryDatabase(databaseName: "BazarDbTest")
                 .Options;
